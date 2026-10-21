@@ -1,0 +1,29 @@
+AUTOCAN — PRIMEIRA VERSÃO VISUAL
+
+Inclui:
+- Interface escura em Python/Tkinter
+- Dados simulados de RPM, temperatura, velocidade e bateria
+- Diagnóstico automático e histórico de alertas
+- Botões para simular quatro tipos de avaria
+- Gráfico de tendências em tempo real
+- Base de dados SQLite local
+- Sessões e exportação de relatório TXT
+- Estrutura separada para futura integração CAN
+
+Executar:
+1. Instala Python 3.10+.
+2. Extrai o ZIP para uma pasta.
+3. Abre o terminal nessa pasta e executa: python autocan_app.py
+   Em alguns sistemas usa: python3 autocan_app.py
+
+A aplicação cria automaticamente autocan.db na mesma pasta.
+Não precisa de internet, Arduino, CAN Bus nem bibliotecas externas.
+No Linux, poderá ser necessário instalar o pacote python3-tk.
+
+Teste:
+1. Observa os valores e o gráfico.
+2. Ativa um botão de avaria e verifica o diagnóstico.
+3. Usa "Repor estado normal".
+4. Termina a sessão e exporta o relatório.
+
+Nota: os dados são simulados e não representam um diagnóstico profissional.
