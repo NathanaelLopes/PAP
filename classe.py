@@ -14,7 +14,8 @@ class restaurante:
 
     def definir_servidos(self, servidos):
         if servidos >= 0:
-            self.servidos
+
+            self.servidos = servidos
         else:
             print("Não ha servidos")
 
@@ -24,7 +25,9 @@ class restaurante:
 
 rest1 = restaurante("Mar doce", "peixe doce")
 print(rest1.descrever())
-rest1.servidos
+
+
+rest1.servidos = 0
 rest1.definir_servidos(10)
 rest1.somar_servidos(20)
 
